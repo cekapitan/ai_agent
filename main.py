@@ -51,6 +51,7 @@ def main():
         
         # Show token information only in verbose mode
         if verbose:
+            print(f"User prompt: {prompt}")
             print(f"Prompt tokens: {model.usage_metadata.prompt_token_count}")
             print(f"Response tokens: {model.usage_metadata.candidates_token_count}")
         
